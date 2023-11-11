@@ -1,0 +1,10 @@
+{
+ "channel":"ChannelID",
+ "contents":"Welcome to raid",
+ "random":true,
+ "random_length":4,
+ "rate":5,
+ "tokens":[
+""
+]
+}
