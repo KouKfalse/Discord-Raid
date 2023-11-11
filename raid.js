@@ -24,7 +24,8 @@ token_p = tokenM.tokenPP(i);
 for(var i2 = 0;i2 != forRate;i2++){
 fetch("https://discord.com/api/v9/channels/"+target_cid+"/messages", {
   "headers": {
-    "authorization":token_p
+    "authorization":token_p,
+   "content-type":"application/json"
   },
   "body": "{\"mobile_network_type\":\"cellular\",\"content\":\""+content+RandomGen()+"\",\"nonce\":\""+Math.floor(Math.random() *(1000000000000000000))+"\",\"tts\":false,\"flags\":0}",
   "method": "POST"
